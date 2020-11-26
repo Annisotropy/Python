@@ -19,17 +19,17 @@ my_dict = {'название': [],
            'ед': []
            }
 
-for g in my_list:
-    name_of_product = g[1]['название']
+for element in my_list:
+    name_of_product = element[1]['название']
     my_dict['название'].append(name_of_product)
 
-    price = g[1]['цена']
+    price = element[1]['цена']
     my_dict['цена'].append(price)
 
-    quantity = g[1]['количество']
+    quantity = element[1]['количество']
     my_dict['количество'].append(quantity)
 
-    units = g[1]['ед']
+    units = element[1]['ед']
     my_dict['ед'].append(units)
 
 print(my_dict)
